@@ -1,7 +1,25 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$headers-background-color: grey;
+
+h1,h2{
+	font-weight: bold;
+	background-color: $headers-background-color;
+}
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+}
+
+ul{
+
+	li:hover{
+		color: yellow;
+	}
+}
+
+p{
+	color: red;
+    background-color: yellow;
 }
