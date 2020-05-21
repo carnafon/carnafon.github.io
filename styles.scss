@@ -3,8 +3,22 @@ $primary-color: #333;
 $headers-background-color: grey;
 
 h1,h2{
+	max-width: 300px;
 	font-weight: bold;
 	background-color: $headers-background-color;
+}
+
+ @media(min-width: 800px) {
+    footer {
+            background-color: red;
+            }
+}
+
+ @media(max-width: 799px) {
+    footer {
+
+            background-color: blue;
+            }
 }
 
 body {
@@ -19,7 +33,21 @@ ul{
 	}
 }
 
-p{
+p::selection{
 	color: red;
     background-color: yellow;
+}
+
+%event{
+background-color: black;
+
+}
+.success{
+	@extend %event;
+	color:green;
+}
+
+.fail{
+	@extend %event;
+	color:red;
 }

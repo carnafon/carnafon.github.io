@@ -1,7 +1,14 @@
 h1, h2 {
+  max-width: 300px;
   font-weight: bold;
   background-color: grey; }
 
+@media (min-width: 800px) {
+  footer {
+    background-color: red; } }
+@media (max-width: 799px) {
+  footer {
+    background-color: blue; } }
 body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
@@ -9,8 +16,17 @@ body {
 ul li:hover {
   color: yellow; }
 
-p {
+p::selection {
   color: red;
   background-color: yellow; }
+
+.success, .fail {
+  background-color: black; }
+
+.success {
+  color: green; }
+
+.fail {
+  color: red; }
 
 /*# sourceMappingURL=styles.css.map */

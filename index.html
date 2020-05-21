@@ -2,13 +2,15 @@
 <html>
     <head>
         <title>Carnafon The Bassman</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    	<h1>Welcome to my personal webpage</h1>
+    	<h1 id="titulo">Welcome to my personal webpage</h1>
     	<img src="MiFoto.jpg">
         <p>My life is amazingly amazing so underline these lines</p>
-    	<div>Here are my personal interests. Check them out:
+    	<div class="container">Here are my personal interests. Check them out:
     		<ul>
     			<li><a href="Music.html">Music</a></li>
     			<li><a href="Videogames.html">Videogames</a></li>
@@ -16,6 +18,22 @@
     		</ul>
     	</div>
 
-        Hello, world!
+
+        <div>
+                What is my Favorite hobby?
+                <input name="color" type="radio" value="music" > Music
+                <input name="color" type="radio" value="videogames" > Videogames
+                <input name="color" type="radio" value="cooking" > Cooking
+                <input name="color" type="radio" value="other"> Other
+        </div>
+
+        <div class="success">Im right</div>
+        <div class="fail">Im wrong</div>
+
+
+        <div><a href="#titulo"> Let´s go back to the title!</a></div>
     </body>
+    <footer>
+        <div>If I am small i will get another line</div>
+    </footer>
 </html>
